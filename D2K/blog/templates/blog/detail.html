@@ -2,6 +2,7 @@
 <p><a>{{ Title.Title_text}}</a></p>
 
 {% for subtitle in latest_subtitle_list %}
+    <p> <b> {{subtitle.title}}</b></p> </br>
     <ul> <li><a href="{% url 'blog:paragraph' subtitle.id %}">{{ subtitle.context }}</a></li></ul>
     
     {% endfor %}
