@@ -1,8 +1,8 @@
-{% if latest_paragraph_list %}
-    
-    {% for paragraph in latest_paragraph_list %}
-    <ul> <li><a href="{% url 'blog:detail' paragraph.id %}">{{ paragraph.title }}</a></li></ul>
-
+{% if latest_title_list %}
+   
+   <p><b>Hand book for bioinformatics, statistics and machine learning.</b></p>
+    {% for title in latest_title_list %}
+    <ul> <li><a href="{% url 'blog:detail' title.id %}">{{ title.Title_text }}</a></li></ul>
     {% endfor %}
 
 {% else %}

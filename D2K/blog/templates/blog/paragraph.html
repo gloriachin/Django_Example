@@ -1,8 +1,10 @@
+
 <h1>{{ Title.Title_text }}</h1>
 <p><a>{{ Title.Title_text}}</a></p>
 
-{% for subtitle in latest_subtitle_list %}
-    <ul> <li><a href="{% url 'blog:paragraph' subtitle.id %}">{{ subtitle.context }}</a></li></ul>
+{% for paragraph in latest_paragraph_list %}
+
+    {{ paragraph.context }}
     
     {% endfor %}
 

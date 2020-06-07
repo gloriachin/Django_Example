@@ -2,11 +2,9 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import  Paragraph, Title
+from .models import   Title, Subtitle, Paragraph
 
 #admin.site.register(Question)#
-
-
 
 
 #class TitleAdmin(admin.ModelAdmin):
@@ -23,4 +21,5 @@ from .models import  Paragraph, Title
 #        ('content', {'field':['content_text']}),
 #    ]
 admin.site.register(Title)
+admin.site.register(Subtitle)
 admin.site.register(Paragraph)
