@@ -1,0 +1,11 @@
+{% if latest_paragraph_list %}
+    
+    {% for paragraph in latest_paragraph_list %}
+    <ul> <li><a href="{% url 'blog:detail' paragraph.id %}">{{ paragraph.title }}</a></li></ul>
+
+    {% endfor %}
+
+{% else %}
+    <p>No posts are available.</p>
+{% endif %}
+

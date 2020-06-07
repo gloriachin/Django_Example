@@ -120,6 +120,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 INSTALLED_APPS = [
+    'blog.apps.BlogConfig',
     'polls.apps.PollsConfig',  
     'django.contrib.admin', ##The admin site.
     'django.contrib.auth', #An authentication system.
