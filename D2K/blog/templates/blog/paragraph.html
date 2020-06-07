@@ -3,7 +3,7 @@
 <p><a>{{ Title.Title_text}}</a></p>
 
 {% for paragraph in latest_paragraph_list %}
-
+    <p> <b> {{paragraph.subtitle}}</b></p> </br>
     {{ paragraph.context }}
     
     {% endfor %}
