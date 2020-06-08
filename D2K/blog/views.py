@@ -56,4 +56,4 @@ class ParagraphView(generic.ListView):
     def get_queryset(self):
         #print(f"pk = {self.pk}")
         print(f"sub_id = {self.sub_id}")
-        return Paragraph.objects.all().filter(subtitle=5).order_by('-pub_date')
+        return Paragraph.objects.all().filter(subtitle=self.sub_id).order_by('-pub_date')

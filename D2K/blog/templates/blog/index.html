@@ -1,6 +1,13 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
+
+<div class="header">
+    <h1>Gloria' Blog</h1>
+    <p>Hand books for bioinformatics, statistics and machine learning</p>
+  </div>
+
 {% if latest_title_list %}
-   
-   <p><b>Hand book for bioinformatics, statistics and machine learning.</b></p>
     {% for title in latest_title_list %}
     <ul> <li><a href="{% url 'blog:detail' title.id %}">{{ title.Title_text }}</a></li></ul>
     {% endfor %}
@@ -9,3 +16,6 @@
     <p>No posts are available.</p>
 {% endif %}
 
+<div class="footer">
+    <p>Copyright @Gloria Contact: gqin at systemsbiology.org</p>
+  </div>

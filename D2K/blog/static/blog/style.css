@@ -1,0 +1,36 @@
+li {
+    color: green;
+    font-family: verdana;
+    font-size: 100%;
+}
+
+body {background-color: gainsboro;
+    font-family: verdana;
+    font-size: 100%;
+    }
+
+h1 {
+    color: white;
+    font-family: verdana;
+    font-size: 100%;
+  }
+p  {
+    color: grey;
+    font-family: courier;
+    font-size: 100%;
+  }
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: rgb(57,222,232);
+    color: white;
+    font-size: 150%;
+  }
+
+.footer {
+    padding: 5px; /* Some padding */
+    text-align: center; /* Center text*/
+    font-size: 80%;
+    color: black;
+  }

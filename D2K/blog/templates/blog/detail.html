@@ -1,5 +1,15 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
+
+<div class="header">
+    <h1>Gloria' Blog</h1>
+    <p>Hand books for bioinformatics, statistics and machine learning</p>
+  </div>
+
+
 <h1>{{ Title.Title_text }}</h1>
-<p><a>{{ Title.Title_text}}</a></p>
+<p>{{ Title.Title_text}}</p>
 
 {% for subtitle in latest_subtitle_list %}
     <p> <b> {{subtitle.title}}</b></p> </br>
@@ -8,3 +18,7 @@
     {% endfor %}
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<div class="footer">
+    <p>Copyright @Gloria Contact: gqin@systemsbiology.org</p>
+  </div>

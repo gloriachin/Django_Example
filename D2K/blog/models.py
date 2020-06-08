@@ -14,7 +14,7 @@ class Title(models.Model):
 class Subtitle(models.Model):
     title = models.ForeignKey(Title, on_delete=models.CASCADE, default = '')
     pub_date = models.DateTimeField('date published')
-    context = models.TextField(max_length=200,default = '' )
+    context = models.CharField(max_length=200,default = '' )
     def __str__(self):
         return self.context
 
@@ -29,4 +29,6 @@ class Paragraph(models.Model):
         
     def was_published_recently(self):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+
+
 
